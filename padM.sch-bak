@@ -141,12 +141,12 @@ $EndComp
 $Comp
 L Device:C_Small C1005
 U 1 1 64951E1D
-P 1800 4002
-F 0 "C1005" H 1892 4048 50  0000 L CNN
-F 1 "0.1uF" H 1892 3957 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1800 4002 50  0001 C CNN
-F 3 "~" H 1800 4002 50  0001 C CNN
-	1    1800 4002
+P 1891 4001
+F 0 "C1005" H 1983 4047 50  0000 L CNN
+F 1 "0.1uF" H 1983 3956 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1891 4001 50  0001 C CNN
+F 3 "~" H 1891 4001 50  0001 C CNN
+	1    1891 4001
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -171,11 +171,6 @@ F 3 "~" H 1000 4003 50  0001 C CNN
 	1    1000 4003
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1801 3902 1801 3901
-Wire Wire Line
-	1801 3902 2200 3902
-Connection ~ 1801 3902
 Wire Wire Line
 	1000 4103 1397 4103
 Wire Wire Line
@@ -203,16 +198,9 @@ F 3 "" H 1574 3865 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1574 3865 1574 3902
-Wire Wire Line
-	1574 3902 1801 3902
-Wire Wire Line
 	1583 4134 1583 4102
 Wire Wire Line
-	1400 4102 1583 4102
-Connection ~ 1583 4102
-Wire Wire Line
-	1583 4102 1800 4102
+	1400 4102 1582 4102
 $Comp
 L Device:C_Small C1003
 U 1 1 64976292
@@ -455,21 +443,17 @@ $EndComp
 $Comp
 L Device:D_Small D1003
 U 1 1 649E7D84
-P 7299 2169
-F 0 "D1003" V 7345 2099 50  0000 R CNN
-F 1 "D_Small" V 7254 2099 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 7299 2169 50  0001 C CNN
-F 3 "~" V 7299 2169 50  0001 C CNN
-	1    7299 2169
+P 7299 2170
+F 0 "D1003" V 7345 2100 50  0000 R CNN
+F 1 "D_Small" V 7254 2100 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 7299 2170 50  0001 C CNN
+F 3 "~" V 7299 2170 50  0001 C CNN
+	1    7299 2170
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	7408 2010 7408 2011
-Wire Wire Line
-	7408 2069 7299 2069
 Connection ~ 7408 2011
-Wire Wire Line
-	7408 2011 7408 2069
 Wire Wire Line
 	7309 1505 6632 1505
 Connection ~ 6632 1505
@@ -657,9 +641,6 @@ Wire Wire Line
 	2299 3219 2341 3219
 Wire Wire Line
 	2341 3219 2341 3183
-Connection ~ 1800 4102
-Wire Wire Line
-	1800 4102 2200 4102
 Connection ~ 1397 4103
 Wire Wire Line
 	1397 4103 1399 4103
@@ -667,8 +648,35 @@ Wire Wire Line
 	1000 3903 1397 3903
 Wire Wire Line
 	1397 3903 1574 3903
-Wire Wire Line
-	1574 3903 1574 3902
 Connection ~ 1397 3903
+Wire Wire Line
+	7299 2070 7408 2070
+Wire Wire Line
+	7408 2011 7408 2070
+Wire Wire Line
+	1574 3865 1574 3902
+Wire Wire Line
+	1574 3902 1891 3902
+Wire Wire Line
+	1891 3902 1891 3901
 Connection ~ 1574 3902
+Wire Wire Line
+	1574 3902 1574 3903
+Wire Wire Line
+	1891 3901 2200 3901
+Wire Wire Line
+	2200 3901 2200 3902
+Connection ~ 1891 3901
+Wire Wire Line
+	1891 4101 2200 4101
+Wire Wire Line
+	2200 4101 2200 4102
+Wire Wire Line
+	1891 4101 1582 4101
+Wire Wire Line
+	1582 4101 1582 4102
+Connection ~ 1891 4101
+Connection ~ 1582 4102
+Wire Wire Line
+	1582 4102 1583 4102
 $EndSCHEMATC
